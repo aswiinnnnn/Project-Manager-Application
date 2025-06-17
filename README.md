@@ -1,6 +1,8 @@
 # Project Management System
 
-A full-stack project management application built with React (Frontend) and Django (Backend) that allows you to manage projects, employees, and project managers.
+A full-stack project management application built with React (Frontend) and Django (Backend), created by [@aswiinnnnn](https://github.com/aswiinnnnn).  
+This app allows you to manage projects, employees, and project managers effectively.
+
 
 ## Features
 
