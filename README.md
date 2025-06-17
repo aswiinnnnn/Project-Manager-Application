@@ -3,7 +3,6 @@
 A full-stack project management application built with React (Frontend) and Django (Backend), created by [@aswiinnnnn](https://github.com/aswiinnnnn).  
 This app allows you to manage projects, employees, and project managers effectively.
 
-
 ## Features
 
 - Create, read, update, and delete projects
@@ -86,7 +85,23 @@ python manage.py createsuperuser
 ```
 Follow the prompts to create your admin username, email, and password. You'll use these credentials to access the Django admin interface at http://127.0.0.1:8000/admin/
 
-8. Start the backend server:
+8. Initial Data Setup (Required):
+   - Access the admin panel at http://127.0.0.1:8000/admin/
+   - Log in with your superuser credentials
+   - First, create at least one Project Manager:
+     - Click on "Project Managers" under the API section
+     - Click "Add Project Manager"
+     - Enter the manager's name and save
+   - Then, create some Employees:
+     - Click on "Employees" under the API section
+     - Click "Add Employee"
+     - Enter the employee's name and save
+   - These initial records are required because:
+     - Project creation requires at least one Project Manager
+     - Projects can be assigned to Employees
+     - Without these records, you won't be able to create projects through the frontend
+
+9. Start the backend server:
 ```bash
 python manage.py runserver
 ```
@@ -139,6 +154,7 @@ project/
     │   ├── App.jsx        # Main App component
     │   └── main.jsx       # Entry point
     └── package.json
+    
 ```
 
 ## API Endpoints
